@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Ders-5 Div,Span Tagleri ve Form Elemanları</title>
+    </head>
+    <body>
+        <p>Adım Soyadım</p>
+        <p>Adım Soyadım - 2</p>
+        <div>Bu bir DIV dir, P TAG leri yerine bunu kullanmayı 
+            tercih edebiliriz.
+        </div>
+        <div>Div = temel, ham bir yeni satır oluşturabiliriz.</div>
+        <br>
+        <span>Adım Soyadım Span</span>
+        <span>Bu bir SPAN tag idir. 
+            Aynı satırda yanyana yazabilme imkanı</span>
+        <br>
+        <br>
+        <h1>Form Elemanları</h1>
+        <div>
+            <b>Adımız Soyadımız : </b>
+            <input type="text" name="adSoyad" maxlength="50" placeholder="Ad Soyad giriniz...">
+            <br>
+            <b>Doğum Tarihi : </b>
+            <input type="date" name="dogumTarihi" value="">
+            <br>
+            <b>Kulüp Seçiniz : </b> 
+            <input type="radio" id="radioYazilim" name="dersKulubu" value="yazilim" checked>
+            <span>Yazılım</span>
+            <input type="radio" id="radioIngilizce" name="dersKulubu" value="ingilizce">
+            <span>İngilizce</span>
+            <br>
+            <b>Form Onayı : </b>
+            <input type="checkbox" name="formOnayi"><span>Onaylıyorum</span>
+            <br>
+            <b>Sayı Girin : </b>
+            <input type="number" value="5" name="sayisalVeri">
+            <br>
+            <button onclick="window.print();">Yazdır</button>
+        </div>
+    </body>
+</html>

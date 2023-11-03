@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stilleri STYLE Tag ile kullanmak</title>
+    </head>
+    <body>
+        <style>
+            table, th, td {
+              border:1px solid black;
+            }
+            
+         </style>
+         <a style="color: #fd3c11;" href="Ders6.html">Geri Dön <=</a>
+         <br>
+         <br>
+         <br>
+
+        <table>
+            <tr>
+                <td>321 </td>
+                <td>48964</td>
+            </tr>
+            <tr>
+                <td>6842</td>
+                <td>68426</td>
+            </tr>
+        </table>
+    </body>
+</html>

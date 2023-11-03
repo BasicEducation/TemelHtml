@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tablo yapıları ve Stiller</title>
+    </head>
+    <body>
+
+        <table style="border:1px black;">
+            <tr>
+                <th style="border:1px solid black;">Ad Soyad</th>
+                <th style="border:1px solid black;">Sınıf</th>
+                <th style="border:1px solid black;">Okul No</th>
+            </tr>
+            <tr style="border:1px solid black;">
+                <td style="border:1px solid black;">Talihan İNEL</td>
+                <td style="border-width: 1px; border-style: solid; border-color: black;">9-A</td>
+                <td style="border:1px solid black;">026</td>
+            </tr>
+        </table>
+        <br>
+        <a href="Ders6-Detay.html">Stilleri STYLE Tag ile Kullanabiliriz</a>
+    </body>
+</html>

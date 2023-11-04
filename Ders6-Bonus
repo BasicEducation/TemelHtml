@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Belirli Bir Alan İçindekileri Print Etme</title>
+    </head>
+    <body>
+        <style>
+            table, th, td {
+              border:1px solid black;
+            }
+            table {
+                border-collapse: collapse;
+            }
+         </style>
+
+        <div>Bunu yazdırmamıza gerek yok</div>
+        <br>
+        <div>
+            Burayıda yazdırmasak olur
+        </div>
+        <br>
+        <br>
+        <div id="printableDiv">
+            <style>
+                table, th, td {
+                  border:1px solid black;
+                }
+                table {
+                    border-collapse: collapse;
+                }
+             </style>
+    
+            <table class="myTable">
+                <tr>
+                    <th>Ad Soyad</th>
+                    <th>Sınıf</th>
+                    <th>Okul No</th>
+                </tr>
+                <tr>
+                    <td>Talihan İNEL</td>
+                    <td>9-A</td>
+                    <td>026</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <th>Ad Soyad</th>
+                <th>Sınıf</th>
+                <th>Okul No</th>
+            </tr>
+            <tr>
+                <td>Talihan İNEL</td>
+                <td>9-A</td>
+                <td>026</td>
+            </tr>
+        </table>
+        <br>
+        <button onclick="printSomething();">Belirli Bir Alanı Yazdır</button>
+
+        <!--Script tag javascript kodları yazıp çalıştırmamızı sağlayan bir tag dir.-->
+        <script>
+            //Burada bir fonksiyon oluşturuyoruz ve buton altında bu fonksiyonu çağırıyoruz
+            //Fonksiyonlar birden fazla yapılacak işler için kolaylık sağlaması amacıyla kullanılırlar
+            function printSomething()
+            {
+                var divContent = document.getElementById("printableDiv").innerHTML;
+
+                var printWindow = window.open();
+                printWindow.document.open();
+                printWindow.document.write('<html><head><title>Belirli Bir Alanı Yazdırıyoruz</title></head><body>');
+                printWindow.document.write(divContent);
+                printWindow.document.write('</body></html>');
+                printWindow.document.close();
+                printWindow.print();
+                printWindow.close();
+            }
+        </script>
+    </body>
+</html>

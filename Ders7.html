@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>STYLE Tag in çeşitli kullanımları ve CLASS yapısı</title>
+    </head>
+    <body>
+        <b>Adımız Soyadımız : </b>
+        <input type="text" name="adSoyad" maxlength="50" placeholder="Ad Soyad giriniz...">
+        <br>
+        <b>Doğum Tarihi : </b>
+        <input type="date" name="dogumTarihi" value="">
+        <br>
+        <b>Kulüp Seçiniz : </b> 
+        <input type="radio" id="radioYazilim" name="dersKulubu" value="yazilim" checked>
+        <span>Yazılım</span>
+        <input type="radio" id="radioIngilizce" name="dersKulubu" value="ingilizce">
+        <span>İngilizce</span>
+        <br>
+        <b>Form Onayı : </b>
+        <input type="checkbox" id="formOnayi" name="formOnayi"><span>Onaylıyorum</span>
+        <br>
+        <b>Sayı Girin : </b>
+        <input type="number" value="5" name="sayisalVeri">
+        <br>
+        <br>
+
+
+
+        <table>
+            <tr>
+                <td><b>Adımız Soyadımız : </b></td>
+                <td>
+                    <input type="text" name="adSoyad" 
+                    maxlength="50" placeholder="Ad Soyad giriniz...">
+                </td>
+            </tr>
+            <tr>
+                <td><b>Sayı Girin : </b></td>
+                <td><input type="number" value="5" name="sayisalVeri"></td>
+            </tr>
+        </table>
+
+<br>
+<br>
+
+<style>
+    table td {
+        padding: 10px 5px 3px 7px;
+        /*  
+        padding-top: 10px;
+        padding-right: 5px;
+        padding-bottom: 3px;
+        padding-left: 7px;
+        */
+    }
+
+.benimStilim table tr td {
+    border: 1px solid black;
+}
+
+.benimStilim table {
+    border-collapse: collapse;
+}
+
+</style>
+
+<table>
+    <tr>
+        <td style="background-color: red; color: white; font-size: 15px;">
+            <b>UYARI !</b>
+        </td>
+        <td>
+            Programınızın lisanas süresi dolmak üzeredir.
+        </td>
+    </tr>
+</table>
+
+<br>
+<br>
+
+<div class="benimStilim">
+    <table>
+        <tr style="background-color: blueviolet;
+        color: white; padding: 5px;">
+            <td>Ad Soyad</td>
+            <td>Numara</td>
+        </tr>
+
+        <tr>
+            <td>Ali Veli</td>
+            <td>Numara</td>
+        </tr>
+        <tr>
+            <td>Ali Veli</td>
+            <td>Numara</td>
+        </tr>
+        <tr>
+            <td>Ali Veli</td>
+            <td>Numara</td>
+        </tr>
+    </table>
+</div>
+
+    </body>
+</html>
